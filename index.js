@@ -23,3 +23,23 @@ console.log("Connected");
 });
 
 connection.connect();
+
+function 
+   executeStatement() {
+      request = new Request("select * from tblStudents", function(err, rowCount) {
+         if(err) {
+            console.log(err);
+         } 
+         else {
+            console.log(rowCount + ' rows');
+         }
+      });
+
+      request.on('row', function(columns) {
+         columns.forEach(function(column) {
+            console.log(column.value);
+         });
+      });
+
+      connection.execSql(request);
+   }
