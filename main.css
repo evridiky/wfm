@@ -1,0 +1,51 @@
+ body{
+
+    background-color: antiquewhite;
+    background-size: cover;
+    background-position: no-repeat;
+
+ }
+  .calendar{
+    margin: auto;
+    max-width: 800px;
+    font-family:serif;
+    font-weight: bold;
+    color:rgb(134, 16, 16)
+
+  }
+
+  .month{
+
+text-align:center;
+background-color: rgb(241, 233, 233);
+font-size: 70px;
+letter-spacing: 1px;
+color:black;
+border: 5px solid rgb(22, 2, 2)
+  }
+
+  table, th, td{
+    width:100%;
+    table-layout: auto ;
+    text-align: center;
+    font-size: 27px;
+    border-collapse: collapse;
+    border:5px solid black;
+    font-family: Elephant;
+  }
+
+  tr, th, td{
+    padding: 15px
+  }
+  th{
+    background:#d4e8e9;
+    color: rgb(10, 2, 2);
+    font-family: ari black;
+  }
+  td{
+    background: #87b5ca;
+    color: rgb(7, 55, 100);
+  }
+  td:hover{
+    background: #58093e;
+  }

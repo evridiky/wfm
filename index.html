@@ -1,58 +1,95 @@
+
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> 
+    <title>wfm</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="evo-calendar.midnight-blue.min.css">
+    <link rel="stylesheet" href="evo-calendar.min.css">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    
 
-<meta charset="UTF-8" />
+    <!-- //   function getData (){
+    //     firebase.database().ref('/').once('value', function(snapshot){
+    //     snapshot.forEach(function(childSnapshot)
+    //     {var childKey = childSnapshot.key;
+    //     var childData = childSnapshot.val();
+    //     document.getElamentById("data").innerHTML = childData['Day'] +"," + childData['Calls'];
 
-<title>WFM</title>
+    // })
+    //     })
+    //   } -->
 
-<link rel="stylesheet" href="form.css">
-
+   
 </head>
 
 <body>
 
-<!-- We will put our React component inside this div. -->
-
-<div id="root"></div>
-
-<form action="action_page.php" method="post">
-
-<div class="imgcontainer">
-
-<img src="workforce-management.png" alt="Avatar" class="avatar">
-
+    <div class= "calendar">
+    <div class = "month">
+    <strong>March</strong>
+    <strong>2023</strong>
+    </div>
+ 
+    <table>
+        <tr>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
 </div>
 
-<div class="container">
-
-<label for="uname"><b>Username</b></label>
-
-<input type="text" placeholder="Enter Username" name="uname" required>
-
-<label for="psw"><b>Password</b></label>
-
-<input type="password" placeholder="Enter Password" name="psw" required>
-
-<button type="submit">Login</button>
-
-<label>
-
-<input type="checkbox" checked="checked" name="remember"> Remember me
-
-</label>
-
-</div>
-
-<div class="container" style="background-color:#f1f1f1">
-
-<button type="button" class="cancelbtn">Cancel</button>
-
-<span class="psw">Forgot <a href="#">password?</a></span>
-
-</div>
-</form>
 </body>
 </html>
