@@ -11,17 +11,6 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     
 
-    <!-- //   function getData (){
-    //     firebase.database().ref('/').once('value', function(snapshot){
-    //     snapshot.forEach(function(childSnapshot)
-    //     {var childKey = childSnapshot.key;
-    //     var childData = childSnapshot.val();
-    //     document.getElamentById("data").innerHTML = childData['Day'] +"," + childData['Calls'];
-
-    // })
-    //     })
-    //   } -->
-
    
 </head>
 
@@ -46,14 +35,67 @@
         <tr>
             <td></td>
             <td></td>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
+            <td id="1"  onmousedown="mouseDown1()" onmouseup="mouseUp1()" ondblclick="myFunction()">1</td>
+            
+            <p id="demo1"></p>
+            <script>
+            function myFunction() {
+            document.getElementById("demo1").innerHTML += "ΑΔΕΙΕΣ: <br> ΝΤΟΤΗ ΟΛΓΑ <button>Approve</button> <button>Disapprove</button> <br> ΣΙΜΟΥ ΕΥΡΥΔΙΚΗ  <button>Approve</button> <button>Disapprove</button> <br> ΚΑΡΑΣΑΣ ΒΑΓΓΕΛΗΣ  <button>Approve</button> <button>Disapprove</button> <br>" + 
+            " ΠΑΠΑΔΟΠΟΥΛΟΣ ΔΗΜΗΤΡΗΣ <button>Approve</button> <button>Disapprove</button> <br> ΧΙΩΤΗΣ ΠΑΝΑΓΙΩΤΗΣ  <button>Approve</button> <button>Disapprove</button> <br> ΚΡΑΣΣΑ ΙΟΥΛΙΑ  <button>Approve</button> <button>Disapprove</button>";
+                }
+            </script>
+                <script>
+                function mouseDown1() {
+                  document.getElementById("1").innerHTML = "15.000 calls, HC Needed: 280, Actual HC:277";
+                }
+                
+                function mouseUp1() {
+                  document.getElementById("1").innerHTML = "1";
+                }
+                </script>
+            <td id="2" onmousedown="mouseDown2()" onmouseup="mouseUp2()">2</td>
+            <script>
+                function mouseDown2() {
+                  document.getElementById("2").innerHTML = "14.000 calls, HC Needed: 270, Actual HC:275";
+                }
+                
+                function mouseUp2() {
+                  document.getElementById("2").innerHTML = "2";
+                }
+                </script>
+              <td id="3" onmousedown="mouseDown3()" onmouseup="mouseUp3()">3</td>
+              <script>
+                  function mouseDown3() {
+                    document.getElementById("3").innerHTML = "13.000 calls, HC Needed: 260, Actual HC:276";
+                  }
+                  
+                  function mouseUp3() {
+                    document.getElementById("3").innerHTML = "3";
+                  }
+                  </script>
+              <td id="4" onmousedown="mouseDown4()" onmouseup="mouseUp4()">4</td>
+              <script>
+                  function mouseDown4() {
+                    document.getElementById("4").innerHTML = "4.000 calls, HC Needed: 100, Actual HC:100";
+                  }
+                  
+                  function mouseUp4() {
+                    document.getElementById("4").innerHTML = "4";
+                  }
+                  </script>
+             <td>5</td>
         </tr>
         <tr>
-            <td>6</td>
+            <td id="6" onmousedown="mouseDown6()" onmouseup="mouseUp6()">6</td>
+            <script>
+                function mouseDown6() {
+                  document.getElementById("6").innerHTML = "18.000 calls, HC Needed: 320, Actual HC:315";
+                }
+                
+                function mouseUp6() {
+                  document.getElementById("6").innerHTML = "6";
+                }
+                </script>
             <td>7</td>
             <td>8</td>
             <td>9</td>
@@ -93,3 +135,5 @@
 
 </body>
 </html>
+
+
